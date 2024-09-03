@@ -1,39 +1,73 @@
-Aqui está um exemplo de README para o seu projeto sobre como melhorar a performance da sua API utilizando Redis:
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
+</p>
 
----
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-# 🚀 Boosting API Performance with Redis
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-Welcome to the **"Boosting API Performance with Redis"** project! If you're looking to take your API's performance to the next level, you've come to the right place. Let's dive into what Redis is and why this little red box is a game-changer in our field.
+## Description
 
-## What is Redis? 🤔
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-Redis is an open-source, in-memory key-value data structure store. In simpler terms, it's like an "object" stored in memory, capable of processing data at lightning speed compared to other applications.
+## Installation
 
-## Why is Redis So Important? 🌟
+```bash
+$ npm install
+```
 
-Redis can be applied in a variety of scenarios, such as:
+## Running the app
 
-- **Cache 🗃️**: Reduces latency and increases throughput.
-- **PUB/SUB 📡**: Perfect for high-performance chat rooms.
-- **Session Management 💼**: Keeps session information fast and secure.
+```bash
+# development
+$ npm run start
 
-## How Can Redis Improve Your API's Performance? ⚡
+# watch mode
+$ npm run start:dev
 
-The idea is to use Redis to cache requests from a route, reducing response time. Imagine you've just deployed your API, and your Redis cache is empty. On the first request, Redis checks if any data is stored. Since it's empty, the request proceeds to the route, performs the action, and then stores the data in Redis. On the second request, Redis already has the information and returns it directly to the user, drastically cutting down response time.
+# production mode
+$ npm run start:prod
+```
 
-### Practical Example 🛠️
+## Test
 
-Let's put this into a real-world example:
+```bash
+# unit tests
+$ npm run test
 
-Our route is called **"getReposFromGithub"**, and its goal is to retrieve all repositories of a GitHub user. The first time we make the request, our Redis cache is empty, so the request goes directly to the route, fetching the user's repositories. The second time, Redis is already populated with the information, so we fetch the data directly from Redis, making our API much faster. In my case, the first request took **815 ms**, and the second one only **5 ms**.
+# e2e tests
+$ npm run test:e2e
 
-This is just one of the many ways to enhance your application's performance.
+# test coverage
+$ npm run test:cov
+```
 
-## 🚀 Want to Supercharge Your API?
+## Support
 
-Try using Redis as a cache and share your results in the comments below! 👇
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## 💬 Questions or Suggestions?
+## Stay in touch
 
-Feel free to leave a comment—I'd love to help! And don't forget to follow for more performance optimization tips!
+- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
+
+## License
+
+Nest is [MIT licensed](LICENSE).
